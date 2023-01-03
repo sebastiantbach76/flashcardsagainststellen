@@ -104,7 +104,7 @@ let getMultEquation = () =>
 {
     if(getNumType() > 0)
     {
-        operand1 = getRandInt(1, 50);
+        operand1 = getRandInt(1, 250);
         operand2 = getRandInt(1, 50);
         answer = operand1 * operand2;
     }
@@ -121,13 +121,13 @@ let getDivEquation = () =>
     if(getNumType() > 0)
     {
         operand2 = getRandInt(1, 50);
-        operand1 = operand2 * getRandInt(1, 50);
+        operand1 = operand2 * getRandInt(1, 20);
         answer = operand1 / operand2;
     }
     else
     {
         operand2 = getRandFloat(1, 50, 3);
-        operand1 = Number((operand2 * getRandFloat(1, 50, 3)).toFixed(3));
+        operand1 = Number((operand2 * getRandFloat(1, 20, 3)).toFixed(3));
         answer = Number((operand1 / operand2).toFixed(3));
     }
 }
